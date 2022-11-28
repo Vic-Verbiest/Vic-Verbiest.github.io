@@ -1,0 +1,97 @@
+:root{
+    --title-color:rgb(103, 103, 243);
+    --background-color:rgb(255, 255, 255);
+    --header-accent-color: orange;
+    --text-color:rgb(0, 0, 0);
+    --text-color-neg:red;
+    --background-color-neg:rgba(255, 0, 0, 0.329);
+    --accent-color:rgb(146, 146, 250);
+    --border-color:black;
+    --asside-button-background-color:rgb(0, 110, 255) ;
+    --aside-button-text-color:rgb(255, 255, 255);
+}
+body{
+    background-color: var(--background-color); 
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    margin: 40 0 ;
+}
+button{
+    background-color: var(--header-accent-color);
+    color: var(--title-color);
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+}
+table{
+    border-style: solid ;
+    border-color: var(--border-color);
+    border-width: 2px;
+    border-collapse: collapse;
+    margin: auto;
+}
+th{
+    background-color: var(--title-color);
+    color: var(--text-color);
+    padding: 5px;
+    
+}
+.neg{
+    background-color: var(--background-color-neg);
+    color: var(--text-color-neg);
+}
+h1{
+    color:var(--header-accent-color);
+}
+h2{
+    color: var(--title-color);
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 630px;
+}
+
+div.mid{
+    display: flex;
+}
+
+aside{
+    flex:none;
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+}
+aside>p , input,aside>button{
+    width: 150px;
+    margin-top: 5px;
+}
+aside>button{
+    background-color: var(--asside-button-background-color);
+    color:var(--aside-button-text-color);
+}
+
+div.content{
+    padding: 40px;
+    padding-top: 0;
+    
+}
+article>div{
+    display: flex;
+    justify-content: space-between;
+}
+article>div>img{
+    width: 200px;
+    height: fit-content;
+    
+}
+article p{
+    min-width: 200px;
+}
+.accent{
+    color:var(--accent-color);
+}
