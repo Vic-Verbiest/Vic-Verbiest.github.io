@@ -1,0 +1,111 @@
+:root{
+    --backgroundcolor:white;
+    --backgroundcolor-header:grey;
+    --borederradius-buttons: 10px;
+    --border-width-header:20px;
+}
+
+body{
+    background-color: var(--backgroundcolor);
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+
+button{
+    border-radius: var(--borederradius-buttons);
+    cursor: pointer;
+}
+
+header{
+    z-index: 999;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  var(--backgroundcolor-header);
+    border-bottom: solid;
+    border-width: var(--border-width-header);
+}
+
+header>img{
+    max-width: 100%;
+}
+
+header>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px;  
+}
+header div.title{
+    display: flex;
+    align-items: flex-end;
+
+}
+
+header div.title>img{
+    width: 100px;
+    height: 100px;
+}
+header div.buttons{
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+header div.buttons button{
+    margin: 10px;
+    width: 100px;
+    background-color: var(--backgroundcolor-header);
+}
+
+
+main{
+    height: 300%;
+}
+
+
+footer{
+    z-index: 999;
+    background-color: var(--backgroundcolor-header);
+    padding:50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid;
+    border-width: var(--border-width-header);
+}
+footer div.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer button{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+}
+footer .hidden{
+    width: 100px;
+    height: 40px;
+}
+footer div.buttons>div:hover>.hidden{
+    display: block;
+    transition: all 2s;
+}
+footer button>img{
+    width: 90px;
+    height: 90px;
+    border-radius: var(--borederradius-buttons);
+}
+footer div.collaborations{
+
+    flex: repeat(2,1fr);
+}
+
