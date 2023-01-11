@@ -1,5 +1,5 @@
 :root{
-    --backgroundcolor:white;
+    --backgroundcolor:rgb(255, 0, 0);
     --backgroundcolor-header:grey;
     --borederradius-buttons: 10px;
     --border-width-header:20px;
