@@ -1,0 +1,38 @@
+main{
+    display: flex;
+}
+nav{
+    width: fit-content;
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 5px;
+}
+
+
+iframe{
+    width: 100%;
+    height: 800px;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+div.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    width: 100%;
+
+}
+
+
+div.leider{
+    border: solid 5px;
+    margin: 10px;
+}

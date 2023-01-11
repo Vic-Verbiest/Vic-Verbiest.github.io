@@ -1,0 +1,60 @@
+main>div{
+    height: 150px;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-end;
+}
+div.text a,div.text a:visited{
+    color: black;    
+}
+.hidden{
+    display: block;
+}
+
+div.pic>img{
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+div.text{
+    transition: all 1s;
+    height: 150px;
+    width: 500px;
+    margin: 0;
+    overflow: hidden;
+}
+.hidden,.text{
+    opacity: 0;
+}
+
+main>div:hover{
+    height: 300px;
+}
+
+main>div:hover img.shown{
+    opacity: 0;
+    left: 0;
+    transform: translateX(0);
+}
+main>div:hover .hidden,main>div:hover .text{
+    opacity: 100;
+    left: 0;
+    transform: translateX(0);
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+div.ribbels{background-color: #893fb5;}
+div.speelclub{background-color: #fdff5a;}
+div.rakwi{background-color: #81d654;}
+div.tito{background-color: #c21928;}
+div.keti{background-color: #4937ec;}
+div.aspi{background-color: #eaa64e;}

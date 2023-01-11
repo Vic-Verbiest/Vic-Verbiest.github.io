@@ -1,5 +1,5 @@
 :root{
-    --backgroundcolor:rgb(255, 0, 0);
+    --backgroundcolor:white;
     --backgroundcolor-header:grey;
     --borederradius-buttons: 10px;
     --border-width-header:20px;
@@ -8,6 +8,12 @@
 body{
     background-color: var(--backgroundcolor);
     margin: 0;
+}
+nav{
+    background-color: var(--backgroundcolor-header);
+}
+h2{
+    background-color: var(--backgroundcolor-header);
 }
 .hidden{
     display: none;
