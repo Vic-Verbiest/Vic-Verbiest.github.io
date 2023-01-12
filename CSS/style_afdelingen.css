@@ -24,6 +24,7 @@ div.text{
     width: 500px;
     margin: 0;
     overflow: hidden;
+    z-index: 999;
 }
 .hidden,.text{
     opacity: 0;
@@ -45,16 +46,9 @@ main>div:hover .hidden,main>div:hover .text{
     height: 300px;
 }
 
-
-
-
-
-
-
-
-div.ribbels{background-color: #893fb5;}
-div.speelclub{background-color: #fdff5a;}
-div.rakwi{background-color: #81d654;}
-div.tito{background-color: #c21928;}
-div.keti{background-color: #4937ec;}
-div.aspi{background-color: #eaa64e;}
+div.ribbels,div.ribbels>div.text{background-color: #893fb5;}
+div.speelclub,div.speelclub>div.text{background-color: #fdff5a;}
+div.rakwi,div.rakwi>div.text{background-color: #81d654;}
+div.tito,div.tito>div.text{background-color: #c21928;}
+div.keti,div.keti>div.text{background-color: #4937ec;}
+div.aspi,div.aspi>div.text{background-color: #eaa64e;}
