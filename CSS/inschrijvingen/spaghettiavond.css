@@ -18,7 +18,15 @@ main{
 h1{
     text-align: center;
 }
-
+p,img,input{
+    width: 200px;
+}
+p{
+    height: 20px;
+}
+img{
+    margin: 14px;
+}
 div.form{
     margin-top: 20px;
     background-color: white;
@@ -27,6 +35,7 @@ div.form{
 }
 div.form>div{
     display:flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
