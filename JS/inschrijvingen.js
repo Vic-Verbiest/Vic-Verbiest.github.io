@@ -13,7 +13,7 @@ var myfunc = setInterval(function() {
     var timeleft_eetfestijn = countDownDate_eetfestijn - now;
     var timeleft_zwemnamiddag = countDownDate_zwemnamiddag - now;
     var timeleft_streekbierenquiz = countDownDate_streekbierenquiz - now;
-    var timeleft_kubbtornooi = countDownDate_kubbtornooi - now;
+    var timeleft_kubbtoernooi = countDownDate_kubbtornooi - now;
     var timeleft_ledenBBQ = countDownDate_ledenBBQ - now;
     var timeleft_kampBBQ = countDownDate_kampBBQ - now;
     
@@ -37,10 +37,10 @@ var myfunc = setInterval(function() {
     var minutes_streekbierenquiz = Math.floor((timeleft_streekbierenquiz % (1000 * 60 * 60)) / (1000 * 60));
     var seconds_streekbierenquiz = Math.floor((timeleft_streekbierenquiz % (1000 * 60)) / 1000);
 
-    var days_kubbtornooi = Math.floor(timeleft_kubbtornooi / (1000 * 60 * 60 * 24));
-    var hours_kubbtornooi = Math.floor((timeleft_kubbtornooi % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes_kubbtornooi = Math.floor((timeleft_kubbtornooi % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds_kubbtornooi = Math.floor((timeleft_kubbtornooi % (1000 * 60)) / 1000);
+    var days_kubbtoernooi = Math.floor(timeleft_kubbtoernooi / (1000 * 60 * 60 * 24));
+    var hours_kubbtoernooi = Math.floor((timeleft_kubbtoernooi % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes_kubbtoernooi = Math.floor((timeleft_kubbtoernooi % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds_kubbtoernooi = Math.floor((timeleft_kubbtoernooi % (1000 * 60)) / 1000);
 
     var days_ledenBBQ = Math.floor(timeleft_ledenBBQ / (1000 * 60 * 60 * 24));
     var hours_ledenBBQ = Math.floor((timeleft_ledenBBQ % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -72,10 +72,10 @@ var myfunc = setInterval(function() {
     document.getElementById("mins_streekbierenquiz").innerHTML = minutes_streekbierenquiz + "m " 
     document.getElementById("secs_streekbierenquiz").innerHTML = seconds_streekbierenquiz + "s"
 
-    document.getElementById("days_kubbtornooi").innerHTML = days_kubbtornooi + "d "
-    document.getElementById("hours_kubbtornooi").innerHTML = hours_kubbtornooi + "h " 
-    document.getElementById("mins_kubbtornooi").innerHTML = minutes_kubbtornooi + "m " 
-    document.getElementById("secs_kubbtornooi").innerHTML = seconds_kubbtornooi + "s"
+    document.getElementById("days_kubbtoernooi").innerHTML = days_kubbtoernooi + "d "
+    document.getElementById("hours_kubbtoernooi").innerHTML = hours_kubbtoernooi + "h " 
+    document.getElementById("mins_kubbtoernooi").innerHTML = minutes_kubbtoernooi + "m " 
+    document.getElementById("secs_kubbtoernooi").innerHTML = seconds_kubbtoernooi + "s"
 
     document.getElementById("days_ledenBBQ").innerHTML = days_ledenBBQ + "d "
     document.getElementById("hours_ledenBBQ").innerHTML = hours_ledenBBQ + "h " 
