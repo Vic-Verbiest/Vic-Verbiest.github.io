@@ -1,0 +1,38 @@
+main{
+    width: 100%;
+}
+main button{
+    height: 50px;
+    width: 150px;
+}
+article{
+    background-color: grey;
+    margin: 20px;
+    border: 5px solid;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+article.left{
+
+    flex-wrap: wrap;
+}
+article.right{
+
+    flex-wrap: wrap-reverse;
+}
+article>div{
+    padding:10px;
+    flex: 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article img{
+    flex: 1 400px;
+    width: 400px;
+    border-radius: 30px;
+    height: auto;
+    max-width: 400px;
+}
