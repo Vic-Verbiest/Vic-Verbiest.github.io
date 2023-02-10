@@ -1,0 +1,112 @@
+article{
+    border: black 5px solid;
+    border-radius: 30px;
+    margin:10px;
+}
+picture{
+    display: flex;
+    justify-content: center;
+}
+
+main h2{
+    margin: 0;
+    padding: 15px;
+    border-top-right-radius:25px ;
+    border-top-left-radius: 25px;
+}
+main h3{
+
+}
+article.welcome{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+p.tekst{
+    flex: 1 200px;
+    padding: 10px;
+}
+
+article.welcome>p.title{
+    font-size: 500%;
+    background-color: grey;
+    text-align: center;
+    vertical-align: center;
+    padding: 5px;
+    margin: 0;
+    border-radius: 25px;
+    border: black 5px solid;
+}
+
+ article.nieuws>div.content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+article.nieuws>div.content>div{
+    text-align: center;
+    border: black solid 2px;
+}
+div.event1{
+    border-bottom-left-radius:25px;
+}
+div.hopsadeke{
+    border-bottom-right-radius: 25px;
+}
+
+div.bivak{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.bivak>div{
+    flex: 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    overflow: hidden;
+}
+div.bivak h2{
+    border-radius: 0;
+    border-bottom: 3px solid black;
+}
+div.weekend{
+    border-right: 3px solid black;
+}
+div.bivak picture{
+    height: 400px;
+}
+div.bivak img{
+    height: 390px;
+}
+
+article.support{
+    display: flex;
+}
+article.support>div{
+    flex: 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+article.support>div.banier{
+    border-right: 3px solid black;
+}
+article.support>div.banier h2{
+    border-top-right-radius: 0;
+    border-bottom: 3px solid black;
+}
+article.support>div.trooper h2{
+    border-top-left-radius: 0;
+    border-bottom: 3px solid black;
+}
+article.support img{
+    width: 100%;
+}
+article.support>div.banier picture{
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+}
+article.support>div.trooper picture{
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
