@@ -7,16 +7,22 @@ picture{
     display: flex;
     justify-content: center;
 }
+p{
+    padding: 10px;
+}
+iframe{
+    height: 600px;
+}
 
 main h2{
     margin: 0;
     padding: 15px;
     border-top-right-radius:25px ;
     border-top-left-radius: 25px;
+    border-bottom: 3px solid black;
 }
-main h3{
 
-}
+
 article.welcome{
     display: flex;
     justify-content: center;
@@ -24,7 +30,6 @@ article.welcome{
 }
 p.tekst{
     flex: 1 200px;
-    padding: 10px;
 }
 
 article.welcome>p.title{
@@ -38,13 +43,27 @@ article.welcome>p.title{
     border: black 5px solid;
 }
 
- article.nieuws>div.content{
+article.jaarthema>div{
+    display: flex;
+    flex-wrap: wrap;
+}
+article.jaarthema picture{
+    flex: 1 200px;
+}
+article.jaarthema p{
+    flex: 1 200px;
+}
+
+article.nieuws>div.content{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
 article.nieuws>div.content>div{
     text-align: center;
     border: black solid 2px;
+}
+article.nieuws>h2{
+    border-bottom-width: 1px;
 }
 div.event1{
     border-bottom-left-radius:25px;
@@ -93,11 +112,9 @@ article.support>div.banier{
 }
 article.support>div.banier h2{
     border-top-right-radius: 0;
-    border-bottom: 3px solid black;
 }
 article.support>div.trooper h2{
     border-top-left-radius: 0;
-    border-bottom: 3px solid black;
 }
 article.support img{
     width: 100%;
